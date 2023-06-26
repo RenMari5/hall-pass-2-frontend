@@ -1,7 +1,8 @@
 import "../class-hours/class-hours.styles.scss";
+import ClassProps from "../../types/class.types";
+import { title } from "process";
 
-const ClassHours = ({ class: string }) => {
-  const {title: string} = class;   
+const ClassHours = () => {
   return (
     <div className="class-hours-container">
       <div className="class-hours">
