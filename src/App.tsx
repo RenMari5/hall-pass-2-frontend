@@ -1,5 +1,3 @@
-import React from "react";
-import logo from "./assets/logo.png";
 import "./App.scss";
 import ClassHours from "./components/class-hours/class-hours.component";
 import Directory from "./components/directory/directory.component";
@@ -36,7 +34,7 @@ const App = () => {
     },
   ];
 
-  return <Directory />;
+  return <Directory classes={ClassHours} />;
 };
 
 export default App;

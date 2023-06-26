@@ -1,11 +1,12 @@
+import ClassHours from "../class-hours/class-hours.component";
 import "../directory/directory.styles.scss";
 
 const Directory = ({ classes }) => {
   return (
-    <div className="class-hours-container">
-      <div className="class-hours">
-        <h2>{title}</h2>
-      </div>
+    <div className="class-hours">
+      {classes.map((class) => (
+        <ClassHours key={classes.id} classHour={classes.title} />
+      ))}
     </div>
   );
 };
