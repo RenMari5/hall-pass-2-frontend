@@ -1,6 +1,5 @@
 import "./App.scss";
 import ClassHours from "./components/class-hours/class-hours.component";
-import Directory from "./components/directory/directory.component";
 
 const App = () => {
   const classes = [
@@ -34,7 +33,15 @@ const App = () => {
     },
   ];
 
-  return <Directory classes={ClassHours} />;
+  return (
+    <div className="class-hours-container">
+      <div className="class-hours">
+        {classes.map((hour) => (
+          <ClassHours key={hour.id} title={hour.title} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default App;
