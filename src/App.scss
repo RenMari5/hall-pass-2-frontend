@@ -12,6 +12,7 @@
 
 .class-hours-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -20,12 +21,6 @@
 .class-hours {
   color: white;
   text-shadow: 2px 4px 4px black;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -39,6 +34,10 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (min-width: 760px) {
+
+.class-hours-container {
+  flex-direction: row;
+}
+
 }
