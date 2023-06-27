@@ -1,12 +1,12 @@
-return (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-    </header>
+const ClassHour = ({ hour }) => {
+  const { title } = hour;
+  return (
     <div className="class-hours-container">
       <div className="class-hours">
         <h2>{title}</h2>
       </div>
     </div>
-  </div>
-);
+  );
+};
+
+export default ClassHour;

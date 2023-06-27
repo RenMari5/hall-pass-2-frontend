@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./assets/logo.png";
 import "./App.scss";
 import ClassHour from "./interface/class-hours.interface";
+import Directory from "./components/directory/directory.component";
 
 const App = () => {
   const classes: ClassHour[] = [
@@ -35,8 +36,14 @@ const App = () => {
     },
   ];
 
-  return;
-  <Directory classes={classes} />;
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+      </header>
+      <Directory classes={classes} />
+    </div>
+  );
 };
 
 export default App;
