@@ -1,13 +1,12 @@
+import Hours from "../../interface/class-hours.interface";
 import ClassHour from "../class-hour/class-hour.component";
 
-const Directory = ({ classes }) => {
+const Directory = (classes: Hours) => {
   return (
-    <div className="">
+    <div className="class-hours">
       {
         (classHours = classes.map((hour: { title: string }) => {
-          return {
-            title: `${hour.title}`,
-          };
+          <ClassHour hour={`${hour.title}`} />;
         }))
       }
       ;

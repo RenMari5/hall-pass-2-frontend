@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "./assets/logo.png";
 import "./App.scss";
-import ClassHour from "./interface/class-hours.interface";
+import Hours from "./interface/class-hours.interface";
 import Directory from "./components/directory/directory.component";
 
 const App = () => {
-  const classes: ClassHour[] = [
+  const classes: Hours[] = [
     {
       id: 1,
       title: "1st Hour",
