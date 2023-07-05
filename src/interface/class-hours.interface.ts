@@ -1,5 +1,4 @@
-interface Hours {
-    map(arg0: (hour: { title: string; }) => void): any;
+type Hours = {
     id: number,
     title: string,
 }
