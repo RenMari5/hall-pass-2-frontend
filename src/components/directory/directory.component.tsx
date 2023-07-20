@@ -6,7 +6,7 @@ const Directory = (classes: Hours) => {
     <div className="class-hours">
       {
         (classHours = classes.map((hour: { title: string }) => {
-          <ClassHour hour={`${hour.title}`} />;
+          <ClassHour key={hour.id} hour={`${hour.title}`} />;
         }))
       }
       ;
