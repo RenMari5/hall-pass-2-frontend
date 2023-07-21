@@ -1,4 +1,4 @@
-type Hours = {
+interface Hours {
     id: number,
     title: string,
 }

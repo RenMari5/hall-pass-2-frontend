@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./assets/logo.png";
 import "./App.scss";
 import Hours from "./interface/class-hours.interface";
-import Directory from "./components/directory/directory.component";
+import ClassHour from "./components/class-hour/class-hour.component";
 
 const App = () => {
   const classes: Hours[] = [
@@ -41,7 +41,12 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <Directory classes={{ classes }} />
+      <div className="class-hours">
+        {classHours = classes.map((hour: { id: number; title: string }) => {
+            <ClassHour key={hour.id} hour={`${hour.title}`} />
+          ))}
+        ;
+      </div>
     </div>
   );
 };
